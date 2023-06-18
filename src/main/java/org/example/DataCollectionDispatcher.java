@@ -58,7 +58,7 @@ public class DataCollectionDispatcher {
         });
     }
 
-    public void initialize() throws Exception {
+    public static void initialize() throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
         factory.setPort(30003);

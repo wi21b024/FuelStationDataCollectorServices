@@ -65,7 +65,7 @@ public class StationDataCollector {
         channel.queueDeclare(STATION_USAGE_OUTPUT, false, false, false, null);
     }
 
-    private static String fetchDataFromStationDatabase(String jdbcUrl, String user, String password, char customerID, String stationID) {
+    public static String fetchDataFromStationDatabase(String jdbcUrl, String user, String password, char customerID, String stationID) {
         try {
             Connection connection = DriverManager.getConnection(jdbcUrl, user, password);
             Statement statement = connection.createStatement();
@@ -94,7 +94,7 @@ public class StationDataCollector {
         }
     }
 
-    private static void sendOutputData(String outputData) {
+    public static void sendOutputData(String outputData) {
         try {
             channel.basicPublish("", STATION_USAGE_OUTPUT, null, outputData.getBytes(StandardCharsets.UTF_8));
         } catch (IOException e) {

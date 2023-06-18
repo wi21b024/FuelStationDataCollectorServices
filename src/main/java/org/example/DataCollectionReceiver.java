@@ -51,7 +51,7 @@ public class DataCollectionReceiver {
         });
     }
 
-    private void initialize() throws Exception {
+    public void initialize() throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
         factory.setPort(30003);
