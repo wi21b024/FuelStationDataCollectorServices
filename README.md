@@ -121,3 +121,8 @@ https://www.rabbitmq.com/
 https://www.rabbitmq.com/getstarted.html
 https://www.codespeedy.com/generate-pdf-invoice-using-java/
 
+
+## GitRepos: 
+Services: https://github.com/wi21b024/FuelStationDataCollectorServices
+API: https://github.com/wi21b024/FuelStationDataCollectorAPI
+UI: https://github.com/wi21b024/FuelStationDataCollectorUI
