@@ -119,6 +119,7 @@ public class PDFGenerator {
             String[] values = inputData.substring(stationIndexEnd + 1).split(", ");
             DecimalFormat decimalFormat = new DecimalFormat("#0.00");
 
+
             for (String value : values) {
                 double numericValue = Double.parseDouble(value);
                 double sum = numericValue * price;
@@ -147,7 +148,7 @@ public class PDFGenerator {
         System.exit(0);
     }
 
-    private void initialize() throws Exception {
+    public void initialize() throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
         factory.setPort(30003);
